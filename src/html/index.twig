@@ -1,0 +1,89 @@
+{% extends 'layouts/base.twig' %}
+{% from 'macros/icon.twig' import icon %}
+
+{% block title %}Booking{% endblock %}
+
+{% block body %}
+	<a href="#" class="btn" data-toggle="modal" data-target="#order">Забронировать</a>
+	<div class="modal fade modal-order" id="order" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span></button>
+					<div class="modal-title">Выберите заезд</div>
+					<div class="modal-subtitle">Восхождение на Килиманджаро</div>
+				</div>
+				<div class="modal-body">
+					<div class="slider">
+						<div class="slide">
+							<div class="card">
+								<div class="card__body">
+									<div class="card__caption">Ближайший заезд</div>
+									<div class="card__title">18.08.2022 – 02.09.2022</div>
+									<div class="card__details">
+										<div class="card-price">
+											<div class="card-price__old">110 000 ₽ </div>
+											<div class="card-price__main">78 000 ₽</div>
+											<div class="card-price__date">до 22.08.22</div>
+										</div>
+										<div class="card__places">
+											Осталось:
+											<span>1 место</span>
+										</div>
+									</div>
+									<div class="card-description">
+										<div class="card-description__profile">
+											<div class="card-description__photo">
+												<img src="assets/images/guide.jpg" alt="">
+											</div>
+											<div class="card-description__name">
+												<span>Гид:</span>
+												Сергей <br> Пугачев
+											</div>
+										</div>
+										<div class="card-description__text">Чемпион России, мастер спорта, автор книги «Дорога к вершинам»</div>
+									</div>
+								</div>
+								<div class="card__footer">
+									<div class="card__btn">
+										<a href="#" class="btn">Забронировать</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div  class="slide">
+							<div class="card card_special">
+								<div class="card__body">
+									<div class="card__title">Открытая дата</div>
+									<div class="card__details">
+										<div class="card-price">
+											<div class="card-price__old">110 000 ₽ </div>
+											<div class="card-price__main">78 000 ₽</div>
+											<div class="card-price__date">до 22.08.22</div>
+										</div>
+									</div>
+									<div class="card-description">
+										<div class="card-description__text">Забронировать этот тур без привязки к определённой дате и выбрать заезд позже в любое время без дополнительной оплаты.</div>
+									</div>
+								</div>
+								<div class="card__footer">
+									<div class="card__btn">
+										<a href="#" class="btn">Забронировать</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}

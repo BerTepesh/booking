@@ -1,0 +1,151 @@
+{% from '../macros/icon.twig' import icon %}
+
+<div class="nav-pane">
+	<div class="nav-pane__header">
+		<a href="/" class="nav-pane__logo">
+			<div class="nav-pane__logo-ico">
+				<img src="assets/images/logo.jpg" alt="">
+			</div>
+			<span>Merchy</span>
+		</a>
+	</div>
+	<div class="nav-pane__holder">
+		<div class="main-menu">
+			<div class="main-menu__search">
+				<div class="search">
+					{{ icon('lense' , {'width': 16, 'height': 16}) }}
+					<input type="text" placeholder="Поиск">
+				</div>
+			</div>
+			<div class="main-menu__controls">
+				<a href="personal.html">Dashboard</a>
+				<a href="settings.html">Настройки</a>
+			</div>
+			<ul>
+				<li>
+					<div class="main-submenu">
+						<div class="main-submenu__btn">
+							{{ icon('create-dashboard' , {'width': 24, 'height': 24}) }}
+							Каталог
+						</div>
+						<ul>
+							<li>
+								<a href="index.html">
+									<div class="main-submenu__icon">
+										{{ icon('images' , {'width': 16, 'height': 16}) }}
+									</div>
+									Товары
+								</a>
+							</li>
+							<li>
+								<a href="categories.html">
+									<div class="main-submenu__icon">
+										{{ icon('sim-card' , {'width': 16, 'height': 16}) }}
+									</div>
+									Категории
+								</a>
+							</li>
+							<li>
+								<a href="add-product.html" class="active">
+									<div class="main-submenu__icon">
+										{{ icon('plus' , {'width': 16, 'height': 16}) }}
+									</div>
+									Добавить товар
+								</a>
+							</li>
+							<li>
+								<a href="add-product.html">
+									<div class="main-submenu__icon">
+										{{ icon('pen' , {'width': 16, 'height': 16}) }}
+									</div>
+									Редактировать товар
+								</a>
+							</li>
+							<li>
+								<a href="add-category.html">
+									<div class="main-submenu__icon">
+										{{ icon('plus' , {'width': 16, 'height': 16}) }}
+									</div>
+									Добавить категорию
+								</a>
+							</li>
+							<li>
+								<a href="add-category.html">
+									<div class="main-submenu__icon">
+										{{ icon('pen' , {'width': 16, 'height': 16}) }}
+									</div>
+									Редактировать категорию
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="main-submenu">
+						<div class="main-submenu__btn">
+							{{ icon('credit-card' , {'width': 24, 'height': 24}) }}
+							Платежные провайдеры
+						</div>
+						<ul>
+							<li>
+								<a href="add-provider.html" class="active">
+									<div class="main-submenu__icon">
+										{{ icon('plus' , {'width': 16, 'height': 16}) }}
+									</div>
+									Добавить платежный провайдер
+								</a>
+							</li>
+							<li>
+								<a href="edit-provider.html">
+									<div class="main-submenu__icon">
+										{{ icon('pen' , {'width': 16, 'height': 16}) }}
+									</div>
+									Редактировать платежный провайдер 
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="main-submenu">
+						<div class="main-submenu__btn">
+							{{ icon('box' , {'width': 24, 'height': 24}) }}
+							Заказы
+						</div>
+						<ul>
+							<li>
+								<a href="new-orders.html" class="active">
+									<div class="main-submenu__icon">
+										{{ icon('shopping-bag' , {'width': 16, 'height': 16}) }}
+									</div>
+									Новые заказы
+								</a>
+							</li>
+							<li>
+								<a href="closed-orders.html">
+									<div class="main-submenu__icon">
+										{{ icon('check-circle' , {'width': 16, 'height': 16}) }}
+									</div>
+									Завершенные заказы
+								</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="main-submenu">
+						<a href="#" class="main-submenu__btn inactive">
+							{{ icon('comparison' , {'width': 20, 'height': 20}) }}
+							Аналитика
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<a href="#" class="nav-pane__exit btn">
+			{{ icon('signin' , {'width': 24, 'height': 24}) }}
+			Выйти из системы
+		</a>
+	</div>
+</div>
+

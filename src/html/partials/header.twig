@@ -1,0 +1,35 @@
+{% from '../macros/icon.twig' import icon %}
+
+<header class="header">
+	<div class="header__wrap">
+		<div class="header__holder">
+			<div class="header__ham-trigger" id="ham-trigger"></div>
+			<div class="header__logo">
+				<div class="header__logo-ico" style="background-image: url(assets/images/logo-black.jpg)"></div>
+				<span>Merchy</span>
+			</div>
+			<div class="header__search search">
+				{{ icon('lense' , {'width': 16, 'height': 16}) }}
+				<input type="text" placeholder="Поиск">
+			</div>
+		</div>
+		<div class="header__control">
+				<a href="personal.html">Dashboard</a>
+				<a href="settings.html">Настройки</a>
+				<div class="account">
+					<div class="account__btn">
+						<div class="account__btn-img">
+							<img src="" alt="">
+						</div>
+						<div class="account__menu">
+							<ul>
+								<li><a href="personal.html">Персональные данные</a></li>
+								<li><a href="settings.html">Параметры магазина</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</header>
+
